@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1016207590192",
+    "firebase_url": "https://altachatapp.firebaseio.com",
+    "project_id": "altachatapp",
+    "storage_bucket": "altachatapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1016207590192:android:8bd46d5ed5f9db1a",
+        "android_client_info": {
+          "package_name": "com.example.altachatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1016207590192-nhbvvqshlvfvgqrgodv1vcrdgn8un6n6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.altachatapp",
+            "certificate_hash": "91dfbc32730b66feac7458f8733cf3f4ece54267"
+          }
+        },
+        {
+          "client_id": "1016207590192-ahnhrrg3cfjlkkh1vu2lrqaq05sl03qr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8p-tpG5PwaCM2RyJthVH8v9AHYBUPbM4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1016207590192-ahnhrrg3cfjlkkh1vu2lrqaq05sl03qr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

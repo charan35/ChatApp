@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Otp">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Mobile Num"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:id="@+id/mnum"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp">
+
+        <ImageView
+            android:id="@+id/image_password_icon1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/colorPrimary"
+            android:padding="8dp"
+            android:src="@drawable/ic_lock_black_24dp"
+            android:tint="@color/white"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/image_password_icon1"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/image_password_icon1"
+            android:background="#e6e6e6"
+            android:id="@+id/verifyotp"
+            android:hint="OTP"
+            android:paddingLeft="25dp"
+            android:textSize="15sp"
+            android:inputType="textPassword"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/verifyotp"
+            android:layout_centerInParent="true"
+            android:id="@+id/resend"
+            android:text="RESEND OTP"
+            android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/verify"
+        android:text="Verify"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+
+        />
+
+
+
+</LinearLayout>

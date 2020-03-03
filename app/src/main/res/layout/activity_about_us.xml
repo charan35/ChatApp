@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AboutUs">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#3399ff">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/back"
+                android:layout_marginLeft="3dp"
+                android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/logo"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/logo"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alta Chat"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:fontFamily="@font/bellb"
+                android:layout_marginLeft="5dp"/>
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv1"
+        android:text="About Us"
+        android:textColor="#0099ff"
+        android:textSize="50dp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_below="@+id/toolbar" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Why Choose Us:"
+        android:textColor="#0099ff"
+        android:id="@+id/tv11"
+        android:textSize="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv1"/>
+
+
+    <ExpandableListView
+        android:id="@+id/exp_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#0099ff"
+        android:layout_below="@+id/tv11"
+        tools:ignore="MissingConstraints" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scroll"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/exp_list">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Get To Know Us Better"
+                android:textColor="#0099ff"
+                android:textAlignment="center"
+                android:id="@+id/tv2"
+                android:textSize="25dp"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alta Creative Services is an experienced, innovative design team which we have started with 4+ years of global corporate exposure.
+
+Alta provides a fresh approach with professional, cost effective design solutions for internal communication, promotional, marketing materials and printing services to all industry sectors.
+
+Alta is a value-driven creative organisation; we preserve the highest standards of quality by enforcing honorable practices and making utmost use of the latest tools and technologies to provide our customers with every potential advantage over their competitors"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:id="@+id/tv3"
+                android:textSize="18dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv2"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our Company:"
+                android:drawableLeft="@drawable/ic_thumb_up_black_24dp"
+                android:textColor="#0099ff"
+                android:id="@+id/tv4"
+                android:textSize="25dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv3"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Alta defines designs and delivers technology-enabled branding solutions that help the customers to gain business globally. We have innovative, creative and technically strong wing for graphics and web related solution that have good experience in respective field. Our primary objective is to offer amazing branding services at affordable cost."
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:id="@+id/tv5"
+                android:textSize="18dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv4"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our Vision:"
+                android:drawableLeft="@drawable/ic_star"
+                android:textColor="#0099ff"
+                android:id="@+id/tv6"
+                android:textSize="25dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv5"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To become a well know organization by creating a channel for Creative Services, and by giving expert solutions, supported by implementation of latest technologies."
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:id="@+id/tv7"
+                android:textSize="18dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv6"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We Love:"
+                android:drawableLeft="@drawable/ic_favorite1"
+                android:textColor="#0099ff"
+                android:id="@+id/tv8"
+                android:textSize="25dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv7"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="IT Companies, Manufacturers, Exporters, Retail and Wholesale Trades, Enterprises, Construction and Real Estate firms, Entertainment, Transportation and Warehousing, Contractors, Consultant Services, Accommodation, Food Industries, Professional and Educational Services, Health Care and Hospitality Services, NPO NGO Government Orgs."
+                android:textColor="@color/black"
+                android:textAlignment="center"
+                android:id="@+id/tv9"
+                android:textSize="18dp"
+                android:layout_marginTop="18dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv8"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Our Activities"
+                android:textColor="#0099ff"
+                android:textAlignment="center"
+                android:id="@+id/tv10"
+                android:textSize="25dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv9"/>
+
+
+
+            <!--<TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Why Choose Us:"
+                android:textColor="#0099ff"
+                android:id="@+id/tv11"
+                android:textSize="25dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv10"/>-->
+
+
+
+           <!-- <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:id="@+id/l1"
+                app:layout_constraintTop_toBottomOf="@+id/tv11"
+                >
+
+                <TextView
+                    android:id="@+id/content_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_green_dark"
+                    android:clickable="true"
+                    android:onClick="toggle_contents"
+                    android:padding="10dp"
+                    android:text="Quality First Last and Forever"
+                    android:drawableLeft="@drawable/ic_keyboard_arrow_down_black_24dp"
+                    android:textColor="@android:color/white"
+                    tools:ignore="OnClick" />
+
+                &lt;!&ndash;content to hide/show &ndash;&gt;
+
+                <TextView
+                    android:id="@+id/title_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_blue_dark"
+                    android:padding="10dp"
+                    android:text="Quality tops our check list in every project work we do. Quality is the way we make sure that we meet customer expectation and it gives significance and respect for their brands. We trust in doing quality work than quantity of marketing we do to promote our self."
+                    android:textColor="@android:color/white" />
+
+
+                <TextView
+                    android:id="@+id/content_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_green_dark"
+                    android:clickable="true"
+                    android:onClick="toggle_contents1"
+                    android:padding="10dp"
+                    android:drawableLeft="@drawable/ic_keyboard_arrow_down_black_24dp"
+                    android:text="Clear Cut"
+                    android:textColor="@android:color/white"
+                    tools:ignore="OnClick" />
+
+                &lt;!&ndash;content to hide/show &ndash;&gt;
+
+                <TextView
+                    android:id="@+id/title_text1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_blue_dark"
+                    android:padding="10dp"
+                    android:text="We feel proud of being honest way of doing business. We believe, great achievements need lot of trust among the customers, management and employees and we always put in utmost efforts to be an open book and win hearts."
+                    android:textColor="@android:color/white" />
+
+
+                <TextView
+                    android:id="@+id/content_text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_green_dark"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/ic_keyboard_arrow_down_black_24dp"
+                    android:onClick="toggle_contents1"
+                    android:padding="10dp"
+                    android:text="Approachable"
+                    android:textColor="@android:color/white"
+                    tools:ignore="OnClick" />
+
+                &lt;!&ndash;content to hide/show &ndash;&gt;
+
+                <TextView
+                    android:id="@+id/title_text2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_blue_dark"
+                    android:padding="10dp"
+                    android:text="We're approachable and love to be part of the creative process. You're welcome to sit in with us and share your ideas come to life."
+                    android:textColor="@android:color/white" />
+
+
+
+                <TextView
+                    android:id="@+id/content_text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_green_dark"
+                    android:clickable="true"
+                    android:onClick="toggle_contents1"
+                    android:padding="10dp"
+                    android:text="Cost Effective"
+                    android:textColor="@android:color/white"
+                    android:drawableLeft="@drawable/ic_keyboard_arrow_down_black_24dp"
+                    tools:ignore="OnClick" />
+
+                &lt;!&ndash;content to hide/show &ndash;&gt;
+
+                <TextView
+                    android:id="@+id/title_text3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/holo_blue_dark"
+                    android:padding="10dp"
+                    android:text="We give amazing design and technology at affordable cost. We ensure specializing in finding the most cost-effective ways to grow your business."
+                    android:textColor="@android:color/white" />
+
+
+            </LinearLayout>-->
+
+
+          <!--  <ExpandableListView
+                android:id="@+id/exp_list"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:textColor="#0099ff"
+                android:background="#ffff"
+                app:layout_constraintTop_toBottomOf="@+id/tv11"
+                android:transcriptMode="alwaysScroll"
+                tools:ignore="MissingConstraints" />-->
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Powerful Skills:"
+                android:textColor="#0099ff"
+                android:id="@+id/tv13"
+                android:textSize="25dp"
+                android:layout_marginTop="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv10"/>
+
+            <RelativeLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                app:layout_constraintTop_toBottomOf="@+id/tv13"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl1">
+
+                    <ProgressBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:minHeight="35dip"
+                        android:progress="80"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/t1"
+                        android:text="HTML5-80%"
+                        android:textSize="15dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl2"
+                    android:layout_below="@id/rl1"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp">
+
+                    <ProgressBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:minHeight="35dip"
+                        android:progress="90"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/t2"
+                        android:text="CSS3-90%"
+                        android:textSize="15dp"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl3"
+                    android:layout_below="@id/rl2"
+                    android:layout_marginBottom="20dp">
+
+                    <ProgressBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:minHeight="35dip"
+                        android:progress="95"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/t3"
+                        android:text="JavaScript/JQuery-95%"
+                        android:textSize="15dp"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl4"
+                    android:layout_below="@id/rl3"
+                    android:layout_marginBottom="20dp">
+
+                    <ProgressBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:minHeight="35dip"
+                        android:progress="90"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/t4"
+                        android:text="PHP-90%"
+                        android:textSize="15dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl5"
+                    android:layout_below="@id/rl4"
+                    android:layout_marginBottom="20dp">
+
+                    <ProgressBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:minHeight="35dip"
+                        android:progress="85"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/t5"
+                        android:text="Java-85%"
+                        android:textSize="15dp"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl6"
+                    android:layout_below="@id/rl5"
+                    android:layout_marginBottom="20dp">
+
+                    <ProgressBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:minHeight="35dip"
+                        android:progress="95"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/t6"
+                        android:text="Android-95%"
+                        android:textSize="15dp"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl7"
+                    android:layout_below="@id/rl6"
+                    android:layout_marginBottom="20dp">
+
+                    <ProgressBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:minHeight="35dip"
+                        android:progress="85"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/t7"
+                        android:text="Angular JS-85%"
+                        android:textSize="15dp"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl8"
+                    android:layout_below="@id/rl7"
+                    android:layout_marginBottom="20dp">
+
+                    <ProgressBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:minHeight="35dip"
+                        android:progress="90"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/t8"
+                        android:text="Web Designing/Digital Marketing-90%"
+                        android:textSize="15dp"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl9"
+                    android:layout_below="@id/rl8"
+                    android:layout_marginBottom="20dp">
+
+                    <ProgressBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:minHeight="35dip"
+                        android:progress="80"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/t9"
+                        android:text="Swift-80%"
+                        android:textSize="15dp"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rl10"
+                    android:layout_below="@id/rl9"
+                    android:layout_marginBottom="20dp">
+
+                    <ProgressBar
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@android:style/Widget.ProgressBar.Horizontal"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:minHeight="35dip"
+                        android:progress="80"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:id="@+id/t10"
+                        android:text="C#/C Sharp-80%"
+                        android:textSize="15dp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

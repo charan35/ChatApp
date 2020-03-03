@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/wallpaper" android:title="Wallpaper" />
+    <item
+        android:title="forward_message"
+        android:id="@+id/forward_message"
+        app:showAsAction="ifRoom"
+        android:visible="false"
+        android:icon="@drawable/ic_forward_black_24dp">
+
+    </item>
+
+    <item
+        android:title="copy_text"
+        android:visible="false"
+        app:showAsAction="ifRoom"
+        android:id="@+id/copy_text"
+        android:icon="@drawable/ic_content_copy_black_24dp" >
+
+    </item>
+
+    <item
+        android:title="Share"
+        app:showAsAction="ifRoom"
+        android:visible="false"
+        android:id="@+id/share"
+        android:icon="@drawable/ic_share_black_24dp">
+
+    </item>
+</menu>

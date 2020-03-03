@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Feedback">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:background="#3399ff">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/back"
+                    android:layout_marginLeft="3dp"
+                    android:src="@drawable/ic_arrow_back_black_24dp"/>
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/logo"
+                    android:layout_marginLeft="10dp"
+                    app:srcCompat="@drawable/logo"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alta Chat"
+                    android:layout_gravity="center"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:fontFamily="@font/bellb"
+                    android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawableTint="#0DA1CE"
+            android:hint="Name"
+            android:inputType="textPersonName"
+            android:textSize="15dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textSize="15dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mobile"
+                android:drawableLeft="@drawable/ic_phone_android_black_24dp"
+                android:hint="Mobile Number"
+                android:inputType="phone"
+                android:textSize="15dp" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/feedback"
+                android:drawableLeft="@drawable/ic_feedback_black_24dp"
+                android:hint="Feedback"
+                android:inputType="textAutoCorrect"
+                android:textSize="15dp" />
+
+            <com.hsalf.smilerating.SmileRating
+                android:id="@+id/smile_rating"
+                android:layout_marginTop="10dp"
+                app:angryColor="@color/orange"
+                android:outlineSpotShadowColor="@color/yellow"
+                android:outlineAmbientShadowColor="@color/orange"
+                app:drawingColor="@color/black"
+                app:normalColor="#3399ff"
+                app:placeHolderBackgroundColor="#fcba03"
+                app:placeHolderSmileColor="@color/black"
+                app:textSelectionColor="@color/orange"
+                app:textNonSelectionColor="@color/gradStop"
+                android:layout_width="300dp"
+                app:showLine="false"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content" />
+            <com.spark.submitbutton.SubmitButton
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:id="@+id/submit"
+                android:layout_gravity="center"
+                android:text="Submit"
+                android:textSize="13dp"
+                android:textColor="@color/black"
+                app:sub_btn_background="@color/colorPrimary"
+                app:sub_btn_line_color="#fcba03"
+                app:sub_btn_ripple_color="@color/white"
+                app:sub_btn_tick_color="@color/black"
+                app:sub_btn_duration="3000"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
